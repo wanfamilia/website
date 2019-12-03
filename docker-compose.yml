@@ -31,7 +31,7 @@ services:
     ports:
       - '80:8080'
     volumes:
-      - config/nginx.conf:/opt/bitnami/nginx/conf/server_blocks/my_server_block.conf:ro    
+      - ./config/nginx.conf:/opt/bitnami/nginx/conf/server_blocks/my_server_block.conf:ro    
     networks:
       - rails
     depends_on:
