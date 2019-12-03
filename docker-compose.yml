@@ -37,4 +37,5 @@ services:
     depends_on:
       - myapp
           
-
+networks:
+  rails:
