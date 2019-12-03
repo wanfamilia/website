@@ -4,17 +4,23 @@ services:
     image: 'bitnami/mariadb:10.3'
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
+    networks:
+      - rails
 
   myapp:
     tty: true # Enables debugging capabilities when attached to this container.
     image: bitnami/rails:5
+    container_name: app
     environment:
       - DATABASE_HOST=mariadb
       - DATABASE_NAME=my_app_development
     depends_on:
       - mariadb
     ports:
-      - 3000:3000
+      - 3001:3000
     volumes:
       - .:/app
+      - ../../docker-cache/gems:/opt/bitnami/ruby/lib/ruby/gems
+    networks:
+      - rails
 
