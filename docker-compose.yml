@@ -23,7 +23,6 @@ services:
     volumes:
       - .:/app
       - ../../data/website/gems:/opt/bitnami/ruby/lib/ruby/gems
-      - ../../data/website/secrets.yml:/app/config/secrets.yml
     networks:
       - rails
 
