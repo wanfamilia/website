@@ -1,11 +1,12 @@
 version: '2'
 services:
   mariadb:
+    container_name: mariadb
     image: 'bitnami/mariadb:10.3'
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
     volumes:
-      - ../../data:/bitnami/mariadb 
+      - ../../data/website/db:/bitnami/mariadb 
     networks:
       - rails
 
@@ -27,6 +28,7 @@ services:
       - rails
         
   nginx:
+    container_name: nginx
     image: 'bitnami/nginx:1.16'
     ports:
       - '80:8080'
