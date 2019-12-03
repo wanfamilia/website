@@ -23,6 +23,7 @@ services:
       - 3001:3000
     volumes:
       - .:/app
+      - ../../data/website/gems:/opt/bitnami/ruby/lib/ruby/gems
     networks:
       - rails
         
