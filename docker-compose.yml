@@ -17,6 +17,7 @@ services:
     environment:
       - DATABASE_HOST=mariadb
       - DATABASE_NAME=my_app_development
+      - RAILS_ENV=production
     depends_on:
       - mariadb
     volumes:
