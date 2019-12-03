@@ -17,13 +17,27 @@ services:
     environment:
       - DATABASE_HOST=mariadb
       - DATABASE_NAME=my_app_development
+    depends_on:
+      - mariadb
+    volumes:
+      - .:/app
+      - ../../data/website/gems:/opt/bitnami/ruby/lib/ruby/gems
+    networks:
+      - rails
+
+  locapp:
+    tty: true # Enables debugging capabilities when attached to this container.
+    image: bitnami/rails:5
+    container_name: myapp
+    environment:
+      - DATABASE_HOST=mariadb
+      - DATABASE_NAME=my_app_development
     ports:
       - '127.0.0.1:3001:3000'
     depends_on:
       - mariadb
     volumes:
       - .:/app
-      - ../../data/website/gems:/opt/bitnami/ruby/lib/ruby/gems
     networks:
       - rails
         
