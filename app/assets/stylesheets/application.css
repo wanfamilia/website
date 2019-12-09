@@ -70,7 +70,7 @@ a:hover
 
 .container
 {
-    margin: 0px auto;
+    margin: 1em auto 0;
     width: 1200px;
 }
 
@@ -302,11 +302,6 @@ ul.contact li a:before
 /* Heading Titles                                                                */
 /*********************************************************************************/
 
-.title
-{
-    margin-bottom: 3em;
-}
-
 .title h2
 {
     font-size: 2.8em;
@@ -326,7 +321,7 @@ ul.contact li a:before
 #header-wrapper
 {
     overflow: hidden;
-    padding: 6em 0em 2em 0em;
+    padding: 0.5em;
 }
 
 #header
@@ -461,7 +456,7 @@ ul.contact li a:before
 {
     overflow: hidden;
     width: 1200px;
-    padding: 2em 0px 0em 0px;
+    padding: 0;
     text-align: center;
 }
 
@@ -495,7 +490,7 @@ ul.contact li a:before
 #page-wrapper
 {
     overflow: hidden;
-    padding: 3em 0em 0em 0em;
+    padding: 0;
     text-align: center;
 }
 
@@ -625,6 +620,7 @@ ul.contact li a:before
 .column4
 {
     width: 282px;
+    margin-top: 1em;
 }
 
 .column1,
@@ -652,7 +648,7 @@ ul.contact li a:before
 
 #three-column h2
 {
-    margin: 1em 0em;
+    margin: 0.5em 0;
     font-size: 1.5em;
     font-weight: 700;
 }
@@ -674,23 +670,18 @@ ul.contact li a:before
 
 }
 
-#three-column #tbox1,
-#three-column #tbox2,
-#three-column #tbox3
+#three-column .tbox,
+#three-column .tbox,
+#three-column .tbox
 {
     float: left;
-    width: 320px;
-    padding: 80px 40px 80px 40px;
+    width: 29%;
+    padding: 1em;
 }
 
 #three-column .title
 {
     text-align: center;
-}
-
-#three-column .title h2
-{
-    font-size: 1.60em;
 }
 
 #three-column .title .byline
