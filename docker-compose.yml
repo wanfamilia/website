@@ -39,6 +39,7 @@ services:
       - mariadb
     volumes:
       - .:/app
+      - ../../data/website/gems:/opt/bitnami/ruby/lib/ruby/gems
     networks:
       - rails
         
