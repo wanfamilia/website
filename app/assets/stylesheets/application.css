@@ -348,7 +348,7 @@ ul.contact li a:before
 #logo a
 {
     text-decoration: none;
-    color: #ccaa66;
+    color: #cc9933;
 }
 
 #logo span
@@ -364,7 +364,9 @@ ul.contact li a:before
     color: rgba(255,255,255,0.8);
 }
 
-
+.footer {
+  font-size: 10pt;    
+}
 
 /*********************************************************************************/
 /* Menu                                                                          */
@@ -426,6 +428,10 @@ ul.contact li a:before
 {
     overflow: hidden;
     padding: 0em 0em 5em 0em;
+}
+
+.wrapper a:hover {
+    background: #54a4cc;
 }
 
 #wrapper1

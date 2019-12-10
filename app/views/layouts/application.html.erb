@@ -39,12 +39,13 @@ Released   : 20140215
 </div>
 <div id="page-wrapper">
 	<div id="welcome" class="container">
-		<div id="content">    <%= yield %> </div>
+		<div id="content">    
+		  <%= yield %> 
+		</div>
 		<%= image_tag("banner.jpg", class: "image image-full", alt: "banner") %>
 	</div>
 </div>
-<div class="wrapper">
-    
+<div class="wrapper footer">    
 	<div id="three-column" class="container">
 		<div>Cloud Hosting provided by</div>
 		<div class="tbox">
@@ -70,30 +71,29 @@ Released   : 20140215
 	    <div class="box">Content Powered By</div>
 		<div class="column1">
 			<div class="box">
-				<h3>Templated</h3>
+				<h3><a href="https://templated.co/earthyblue" class="button button-small">Templated</a></h3>
                 <p>This is <strong>EarthyBlue</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. 
                 This free template is released under the 
                 <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you&apos;re pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
-		
-				<a href="https://templated.co/earthyblue" class="button button-small">Learn More</a> </div>
+            </div>
 		</div>
 		<div class="column2">
 			<div class="box">
-				<h3>Docker</h3>
-				<p>Vivamus fermentum nibh in augue praesent urna congue rutrum.</p>
-				<a href="#" class="button button-small">Etiam posuere</a> </div>
+				<h3><a href="https://www.docker.com/" class="button button-small">Docker</a></h3>
+				<p>Provides quick and easy installation and deployment for linux compatible software</p>				 
+            </div>
 		</div>
 		<div class="column3">
 			<div class="box">
-				<h3>Ruby on Rails</h3>
-				<p>Vivamus fermentum nibh in augue praesent urna congue rutrum.</p>
-				<a href="#" class="button button-small">Etiam posuere</a> </div>
+				<h3><a href="https://github.com/bitnami/bitnami-docker-rails/blob/master/5/debian-9/docker-compose.yml" class="button button-small">Ruby on Rails</a></h3>
+				<p>Ruby on Rails manages dynamic content (docker image from bitnami)</p>
+            </div>
 		</div>
 		<div class="column4">
 			<div class="box">
-				<h3>Nginx</h3>
-				<p>Rutrum fermentum nibh in augue praesent urna congue rutrum.</p>
-				<a href="#" class="button button-small">Etiam posuere</a> </div>
+				<h3><a href="https://github.com/bitnami/bitnami-docker-nginx/blob/master/docker-compose.yml" class="button button-small">Nginx</a></h3>
+				<p>Nginx provides HTTPS reverse-proxies for a webapp (docker image from bitnami)</p>
+            </div>
 		</div>
 	</div>
 </div>
