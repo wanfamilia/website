@@ -29,7 +29,11 @@ How to set up putty
 -Select Session Tear Derp
 
 How to make changes with GIT
+
+
 https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html#add-and-commit-local-changes
+-use git checkout -b <<branchname>> to create new branch, or swap to existing one
+-after that, use git push --set-upstream origin <<branchname from before>> to do something, IDK what but it is important?
 -make some file changes
 -use git add .
 -use git bash command git commit -m "Message here, don't use same messages"
