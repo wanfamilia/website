@@ -32,9 +32,10 @@ How to make changes with GIT
 https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html#add-and-commit-local-changes
 -make some file changes
 -use git add .
--use git bash command git commit "Message here, don't use same messages"
+-use git bash command git commit -m "Message here, don't use same messages"
 -use git bash command git push
 -use git pull to receive changes
 -use git status to check on stuff
+-go to git hub and create pull request when finished
 
 
