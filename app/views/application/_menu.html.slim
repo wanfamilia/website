@@ -1,0 +1,5 @@
+- [:homepage, :our_clients, :about_us, :careers, :contact_us].map do |sym|
+  - active_class = sym.to_s == action_name && 'active'
+  li class = active_class
+    a href="/#{sym}" 
+      = sym.to_s.titleize

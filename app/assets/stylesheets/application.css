@@ -70,7 +70,7 @@ a:hover
 
 .container
 {
-    margin: 0px auto;
+    margin: 1em auto 0;
     width: 1200px;
 }
 
@@ -302,11 +302,6 @@ ul.contact li a:before
 /* Heading Titles                                                                */
 /*********************************************************************************/
 
-.title
-{
-    margin-bottom: 3em;
-}
-
 .title h2
 {
     font-size: 2.8em;
@@ -326,7 +321,7 @@ ul.contact li a:before
 #header-wrapper
 {
     overflow: hidden;
-    padding: 6em 0em 2em 0em;
+    padding: 0.5em;
 }
 
 #header
@@ -353,7 +348,7 @@ ul.contact li a:before
 #logo a
 {
     text-decoration: none;
-    color: #FFF;
+    color: #cc9933;
 }
 
 #logo span
@@ -369,7 +364,9 @@ ul.contact li a:before
     color: rgba(255,255,255,0.8);
 }
 
-
+.footer {
+  font-size: 10pt;    
+}
 
 /*********************************************************************************/
 /* Menu                                                                          */
@@ -403,7 +400,7 @@ ul.contact li a:before
     color: #FFF;
 }
 
-#menu li:hover a, #menu li.active a, #menu li.active span
+#menu li.active a, #menu li.active span
 {
     background: #3E5A99;
 }
@@ -431,6 +428,10 @@ ul.contact li a:before
 {
     overflow: hidden;
     padding: 0em 0em 5em 0em;
+}
+
+.wrapper a:hover, #menu li:hover a {
+    background: #5976b3;
 }
 
 #wrapper1
@@ -461,7 +462,7 @@ ul.contact li a:before
 {
     overflow: hidden;
     width: 1200px;
-    padding: 2em 0px 0em 0px;
+    padding: 0;
     text-align: center;
 }
 
@@ -495,7 +496,7 @@ ul.contact li a:before
 #page-wrapper
 {
     overflow: hidden;
-    padding: 3em 0em 0em 0em;
+    padding: 0;
     text-align: center;
 }
 
@@ -614,6 +615,10 @@ ul.contact li a:before
     text-align: center;
 }
 
+#portfolio .header
+{
+    margin-top: 2em;
+}
 #portfolio .title h2
 {
     color: rgba(0,0,0,0.8);
@@ -625,6 +630,7 @@ ul.contact li a:before
 .column4
 {
     width: 282px;
+    margin-top: -1em;
 }
 
 .column1,
@@ -652,7 +658,7 @@ ul.contact li a:before
 
 #three-column h2
 {
-    margin: 1em 0em;
+    margin: 0.5em 0;
     font-size: 1.5em;
     font-weight: 700;
 }
@@ -674,23 +680,16 @@ ul.contact li a:before
 
 }
 
-#three-column #tbox1,
-#three-column #tbox2,
-#three-column #tbox3
+#three-column .tbox
 {
     float: left;
-    width: 320px;
-    padding: 80px 40px 80px 40px;
+    width: 29%;
 }
 
 #three-column .title
 {
     text-align: center;
-}
-
-#three-column .title h2
-{
-    font-size: 1.60em;
+    margin-bottom: 1em;
 }
 
 #three-column .title .byline
@@ -704,7 +703,6 @@ ul.contact li a:before
 {
     border-top-color: #292929;
 }
-
 
 ul.tools
 {
